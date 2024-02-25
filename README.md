@@ -1,17 +1,17 @@
-Ten tester został napisany przeze mnie w celu sprawdzenia projektu libft w szkole 42
-Tester jest napisany w pythonie który uruchamia kolejne programy napisane w C i sprawdza czy wynik funckji oryginalej i odtwarzanej jest taki sam. 
+This tester was written by me to test the libft project at school 42
+The tester is written in python which runs consecutive programs written in C and checks if the result of the original and the reproduced funcition is the same. 
 
-Jak używać:
+How to use:
 
-1. Sklonuj repozytorium do katalogu który będzie w tym samym katalogu co katalog libft
-    przykład:
+1. clone the repository to a directory that will be in the same directory as the libft directory
+    example:
        42_shcool/
          |--jpt_libft
          |--libft
-2. w swoim katalogu libft wywołaj make (tak aby utworzyć plik libft.a)
-3. w katalogu jpt_libft najpierw wpisz "make" - to skopiuje bibliotekę do katalogu testera
-4. nasępnie możesz zacząć przeprowadzać testy wpisując:
-    make run - test wszystkich funkcji w wersji podstawowej
-    make run_d - test wszystkich funkcji razem z wyświetlaniem detali
-    make run ft_isalpha - test jedynie funkcji is alpha (działa również z run_d)
-5. w pliku args.json możesz zarządzać danymi na których przeprowadzane są testy
+2. in your libft directory, call make (so as to create the libft.a file)
+3. in the jpt_libft directory first type "make" - this will copy the library to the tester directory
+4. then you can start testing by typing:
+    make run - test all functions in the basic version
+    make run_d - test all functions together with displaying details
+    make run ft_isalpha - test only the is_alpha function (also works with run_d)
+5. in the file args.json you can manage the data on which the tests are performed
