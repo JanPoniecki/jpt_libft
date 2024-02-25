@@ -1,0 +1,200 @@
+{
+	"ft_isalpha" : "range:55;70;1",
+	"ft_isdigit" : "range:43;63;1",
+	"ft_isalnum" : "range:0;127;10",
+	"ft_isascii" : "range:-12;220;10",
+	"ft_isprint" : "range:27;127;10",
+	"ft_strlen" : 
+	[
+		["text"],
+		["very long text with spaces very very long or maybe not so long"],
+		["testing string with @ null inside"],
+		["EMPTY"],
+		["NULL"]
+	],
+	"ft_memset" :
+	[
+		["42", "5"],
+		["42", "10"],
+		["0", "10"],
+		["42", "0"],
+		["-5", "10"],
+		["42", "-5"],
+		["0", "0"],
+		["-5", "-5"]
+	],
+	"ft_bzero" : "range:-2;10;1",
+	"ft_memcpy":
+	[
+		["duck", "4"],
+		["duck", "2"],
+		["EMPTY", "4"],
+		["NULL", "4"],
+		["duck", "0"],
+		["du@ck", "5"]
+	],
+	"ft_memmove":
+	[
+		["duck", "goes", "4"],
+		["duck", "ck g", "4"],
+		["duck", "py d", "4"],
+		["duck", "py d", "0"]
+	],
+	"ft_strlcpy" : 
+	[
+		["sample_text", "12"],
+		["sample_text", "5"],
+		["sample_text", "0"],
+		["sample_text", "-1"],
+		["EMPTY", "12"],
+		["NULL", "12"]
+	],
+	"ft_strlcat" :
+	[
+		["aaaaa@@@@@@@@@@@@@@@", "test",  "20"],
+		["aaaaa@@@@@@@@@@@@@@@", "test",  "7"],
+		["aaaaaaaaaaaaaaa@@@@@", "test12345", "20"],
+		["aaaaaaaaaaaaaaa@@@@@", "test12345", "0"],
+		["aaaaa@@@@@@@@@@@@@@@", "test",  "-1"],
+		["NULL", "test",  "20"],
+		["EMPTY", "test",  "20"],
+		["aaaaa@@@@@@@@@@@@@@@", "NULL",  "20"],
+		["aaaaa@@@@@@@@@@@@@@@", "EMPTY",  "20"]
+	],
+	"ft_toupper" : "range:84;110;1",
+	"ft_tolower" : "range:84;110;1",
+	"ft_strchr" :
+	[
+		["the_logo_is_flantastic", "108"],
+		["the_logo_is_fantastic", "76"],
+		["NULL", "1"],
+		["EMPTY", "78"],
+		["the_logo_is_fantastic", "-5"],
+		["the_logo_is_fantastic", "2456446"]
+	],
+	"ft_strrchr" :
+	[
+		["the_logo_is_fantastic", "115"],
+		["the_logo_is_fantastic", "76"],
+		["NULL", "1"],
+		["EMPTY", "1"],
+		["the_logo_is_fantastic", "-5"],
+		["the_logo_is_fantastic", "2456446"]
+	],
+	"ft_strncmp" :
+	[
+		["lion", "liob", "4"],
+		["lion", "liob", "3"],
+		["lion", "liob", "8"],
+		["EMPTY", "liob", "4"],
+		["EMPTY", "EMPTY", "4"],
+		["NULL", "liob", "3"],
+		["sinba", "binba", "0"],
+		["sinba", "binba", "-5"]
+	],
+	"ft_memchr" :
+	[
+		["10", "5", "65"],
+		["300", "298", "65"],
+		["0", "0", "65"]
+	],
+	"ft_memcmp" :
+	[
+		["1262703940", "DUCK", "4"],
+		["2262703940", "DUCK", "4"],
+		["1262703940", "DUCA", "3"],
+		["1262703940", "DUCK", "0"],
+		["1262703940", "KKKK", "0"],
+		["1262703940", "EMPTY", "4"],
+		["1262703940", "NULL", "0"]
+	],
+	"ft_strnstr" :
+	[
+		["this is big string", "big", "15"],
+		["this is big string", "big", "11"],
+		["this is big string", "big", "10"],
+		["this is big string", "bag", "15"],
+		["this is big string", "big", "0"],
+		["EMPTY", "big", "10"],
+		["NULL", "big", "10"],
+		["this is big string", "EMPTY", "10"],
+		["this is big string", "NULL", "10"],
+		["this is big string", "big", "-15"]
+],
+	"ft_atoi" :
+	[
+		["0"], ["5"], ["\n1022"], ["30950239"], ["2147483647"], ["-0"], ["-15"], ["-2147483648"], ["    345"], ["     -45"],
+		["   ++-+42"], ["  --+55"], ["---33"], ["--abc 12"], ["12---hhh55"], ["++54-56=a"], ["EMPTY"], ["NULL"]
+	],
+	"ft_calloc" :
+	[
+		["i", "5", "4", "3"],
+		["s", "dog", "cat", "penguin"],
+		["c", "a", "b", "c"]
+	],
+	"ft_strdup" :
+	[
+		["house"], ["house \n newline"], ["EMPTY"], ["NULL"], ["good"]
+	],
+	"ft_substr":
+	[
+		["penguins like to swim", "7", "5"],
+		["penguins like to swim", "7", "25"],
+		["penguins like to swim", "0", "8"],
+		["penguins like to swim", "-5", "5"],
+		["EMPTY", "7", "5"],
+		["NULL", "7", "5"]
+	],
+	"ft_strjoin":
+	[
+		["blue ", "parrot"], ["EMPTY", "elephant"], ["NULL", "snake"], ["snake", "EMPTY"], ["snake", "NULL"]
+	],
+	"ft_strtrim":
+	[
+		["basic test", " "],
+		["  basic test  ", " "],
+		["nrtvf TACOStv nfr", " rvnft"],
+		["123abcdef","321"],
+		["abcdef123", "321"],
+		["No Set", "EMPTY"],
+		["No Set", "NULL"],
+		["abcde177013vwxyz", "0123456789"],
+		["NULL", "rip"]
+	],
+	"ft_split":
+	[
+		["pies,kot,ryba,zaba", ","],
+		["pies,,,,kot,,ryba,zaba,", ","],
+		["pies,kot,ryba,zaba", ";"],
+		["pies,kot,ryba,zaba", ""],
+		["EMPTY", ","],
+		["NULL", "@"],
+		["@aa@bbb", "@"],
+		["      split       this for   me  !       ", " "]
+	],
+	"ft_itoa":
+	[
+		["12"], ["403985"], ["-9384753"], ["0"], ["2147483647"], ["-2147483648"]
+	],
+	"ft_strmapi":
+	[
+		["sandwich"],["sand@@@@wich"],["duck duck"],["EMPTY"],["NULL"]
+	],
+	"ft_striteri":
+	[
+		["sandwich"],["sand@@@@wich"],["duck duck"],["EMPTY"],["NULL"]
+	],
+	"ft_putchar_fd" : "range:0;120;15",
+	"ft_putstr_fd":
+	[
+		["house"],["hous@@@e"],["    house"],["EMPTY"],["NULL"]
+	],
+	"ft_putendl_fd":
+	[
+		["house"],["hous@@@e"],["    house"],["EMPTY"],["NULL"]
+	],
+	"ft_putnbr_fd":
+	[
+		["12"], ["403985"], ["-9384753"], ["0"], ["2147483647"], ["-2147483648"]
+	]
+}
