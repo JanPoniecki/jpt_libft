@@ -1,4 +1,6 @@
 {
+	"names" : "isalpha,isdigit,isalnum,isascii,isprint,strlen,memset,bzero,memcpy,memmove,strlcpy,strlcat,toupper,tolower,strchr,strrchr,strncmp,memchr,memcmp,strnstr,atoi,calloc,strdup,substr,strjoin,strtrim,split,itoa,strmapi,striteri,putchar_fd,putstr_fd,putendl_fd,putnbr_fd",
+	"names_bonus": "lstnew,lstadd_front,lstsize,lstlast,lstadd_back,lstdelone,lstclear,lstiter,lstmap",
 	"ft_isalpha" : "range:55;70;1",
 	"ft_isdigit" : "range:43;63;1",
 	"ft_isalnum" : "range:0;127;10",
