@@ -1,4 +1,4 @@
-#JP Tester
+# JP Tester
 
 This tester was written by me to test the libft project at school 42
 The tester is written in python which runs consecutive programs written in C and checks if the result of the original and the reproduced funcition is the same. 
