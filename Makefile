@@ -9,7 +9,13 @@ run:
 	python3 ./test.py s $(fun)
 
 run_d:
-	python3 ./test.py d $(fun) 
+	python3 ./test.py d $(fun)
+
+run_n:
+	python3 ./test.py n $(fun)
+		
+bonus:
+	gcc -o bonus.out main_bonus.c -L. -lft && ./bonus.out
 
 ft_isalpha:
 	gcc -o $(NAME) test_ft_isalpha.c -I. -L. -lft -lbsd
@@ -118,4 +124,3 @@ clean_temp:
 
 clean:
 	rm -f $(NAME)
-
