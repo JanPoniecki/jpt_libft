@@ -24,6 +24,6 @@ int	main(int argc, char **argv)
 		result = (isalpha(input) >= 1 ? 1 : 0);
 	else
 		result = ft_isalpha(input);
-	printf("testing %d : %d", input, result);
+	printf("testing %c : %d", input, result);
 }
 
